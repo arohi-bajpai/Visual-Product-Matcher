@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
     "preview": "npm run build && npm run start",
-    "clean": "rm -rf .next"
+    "clean": "rm -rf .next",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.7",

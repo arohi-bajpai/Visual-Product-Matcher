@@ -2,6 +2,35 @@
 
 This guide provides step-by-step instructions for deploying the Visual Product Matcher application to various platforms.
 
+## ⚡ Optimized for Vercel Deployment
+
+This project has been specifically optimized for Vercel deployment with the following enhancements:
+
+### ✅ Pre-configured Settings
+- **Auto-detection**: Vercel automatically detects Next.js 15.5.2 projects
+- **`next.config.ts`**: Standalone output with package optimizations
+- **Build scripts**: Optimized for Vercel's build environment
+- **`.vercelignore`**: Excludes unnecessary files from deployment
+- **Environment setup**: Template for production variables
+
+### 🚀 One-Click Vercel Deployment
+
+**Fastest way to deploy:**
+
+1. **Push to GitHub**: Ensure your code is in a GitHub repository
+2. **Import to Vercel**: Go to [vercel.com](https://vercel.com) → "New Project" → Import your repo
+3. **Auto-Deploy**: Vercel detects Next.js automatically and deploys
+4. **Done!**: Your app is live at `https://your-project-name.vercel.app`
+
+**Build optimizations included:**
+- Standalone output for minimal deployment size
+- Package import optimization for faster builds
+- Automatic static page generation
+- Serverless API routes with 30s timeout
+- Image optimization for external sources
+
+---
+
 ## Quick Start
 
 1. **Clone and Setup**

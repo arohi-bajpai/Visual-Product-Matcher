@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Image optimization configuration
   images: {
     remotePatterns: [
       {
@@ -16,6 +17,25 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  
+  // Vercel optimizations
+  output: 'standalone',
+  outputFileTracingRoot: process.cwd(),
+  
+  // Static generation optimization
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@headlessui/react'],
+  },
+  
+  // Ensure proper TypeScript configuration
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  
+  // ESLint configuration
+  eslint: {
+    ignoreDuringBuilds: false,
   },
 };
 
