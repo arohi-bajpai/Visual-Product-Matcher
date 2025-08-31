@@ -531,7 +531,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Technical Approach & Design Decisions** (200 words)
+**Technical Approach & Design Decisions**
 
 This Visual Product Matcher leverages Next.js 15's App Router for optimal performance and SEO. The architecture separates concerns with dedicated components for image upload, product display, and filtering. TypeScript ensures type safety across the application.
 
